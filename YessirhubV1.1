@@ -1,1 +1,283 @@
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Jkkk2/Pris-script-y2k-dfgghdfggdfh/main/YessirhubV1.1'),true))()
+local plr = game:GetService("Players").LocalPlayer
+if plr:IsInGroup("14444508") then
+    else
+        setclipboard("https://www.roblox.com/groups/14444508/Prison-life-y2k-emo-clothes-emo-boy-uhhh#!/about")
+        game:shutdown()
+
+    end
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Yessir hub V1.1", "GrapeTheme")
+
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
+
+
+Section:NewButton("Fly (g)", "Jesus", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/FXuNbyDf"))()
+
+end)
+
+Section:NewButton("Get M4A1", "dfgbg", function()
+ local args = {
+    [1] = workspace.Prison_ITEMS.giver.M4A1.ITEMPICKUP
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Get shotgun", "Give you shotgun", function()
+ local args = {
+    [1] = workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Get M9", "Gives u an M9", function()
+ local args = {
+    [1] = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Get Ak-47", "Gives Ak-47", function()
+local args = {
+    [1] = workspace.Prison_ITEMS.giver:FindFirstChild("AK-47").ITEMPICKUP
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("Other items")
+
+
+Section:NewButton("Hammer", "Gives hammer", function()
+function getNil(name,class) for _,v in pairs(getnilinstances())do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("ITEMPICKUP", "UnionOperation")
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Keycard", "Gives keycard", function()
+    local args = {
+        [1] = workspace.Prison_ITEMS.single:FindFirstChild("Key card").ITEMPICKUP
+    }
+    
+    workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+    
+end)
+
+
+
+
+
+Section:NewButton("Riot shield", "Must be Guard", function()
+    
+local args = {
+    [1] = workspace.Prison_ITEMS.giver:FindFirstChild("Riot Shield").ITEMPICKUP
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+end)
+
+--Player 
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Player")
+
+
+Section:NewSlider("Speed", "Changes speed", 500, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("Jumppower", "Changes Jp", 500, 70, function(j)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
+end)
+
+Section:NewButton("Police hat", "Gives hat", function()
+    local args = {
+        [1] = workspace.Prison_ITEMS.hats:FindFirstChild("Police hat").hat
+    }
+    
+    workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+    
+end)
+
+Section:NewButton("Ski mask", "Gives hat", function()
+
+local args = {
+    [1] = workspace.Prison_ITEMS.hats:FindFirstChild("Ski mask").hat
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+    
+end)
+
+Section:NewButton("Riot helmet", "Gives hat", function()
+
+   local args = {
+    [1] = workspace.Prison_ITEMS.hats:FindFirstChild("Riot helmet").hat
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+        
+    end)
+    
+ --Clothes
+
+ Section:NewButton("Swat clothes", "Gives cloth", function()
+
+local args = {
+    [1] = workspace.Prison_ITEMS.clothes:FindFirstChild("Riot Police").ITEMPICKUP
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+end)
+
+--Tp's
+
+
+
+
+
+local Tab = Window:NewTab("Tps")
+local Section = Tab:NewSection("Tps")
+
+Section:NewButton("Yard", "Yard", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(789, 98, 2471)
+end)
+
+Section:NewButton("Gun room", "Gun room", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(836, 100, 2271)
+end)
+
+Section:NewButton("Cafeteria", "Cafeteria", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(920, 100, 2327)
+end)
+
+Section:NewButton("Gate", "Gate", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(588, 98, 2269)
+end)
+
+Section:NewButton("Crim base", "Crimbase", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-950, 94, 2072)
+end)
+
+Section:NewButton("Cells", "Cells", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(917, 100, 2438)
+end)
+
+Section:NewButton("Safe zone", "Safe zone", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(878, 28, 2347)
+end)
+
+--Teams
+
+local Tab = Window:NewTab("Teams")
+local Section = Tab:NewSection("Teams")
+
+Section:NewButton("Inmate", "srgdsffg", function()
+
+local args = {
+    [1] = "Bright orange"
+}
+
+workspace.Remote.TeamEvent:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Guards", "dfggsdfrggsgzdfgth", function()
+    
+local args = {
+    [1] = "Bright blue"
+}
+
+workspace.Remote.TeamEvent:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Neutral", "ButtonInfo", function()
+    local args = {
+        [1] = "Medium stone grey"
+    }
+    
+    workspace.Remote.TeamEvent:FireServer(unpack(args))
+    
+end)
+
+--Misc--------------------
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Misc")
+
+Section:NewButton("Drop guns", "", function()
+    _G.Gundrops = true
+    while _G.Gundrops == true do
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(910, 107, 2364)
+        wait(0.3)
+        loadstring(game:HttpGet("https://pastebin.com/raw/XT0acuvS"))()
+        wait(0.3)
+    end
+end)
+
+Section:NewButton("Stop drop guns", "", function()
+    _G.Gundrops = false
+    while _G.Gundrops == true do
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(910, 107, 2364)
+        wait(0.1)
+        loadstring(game:HttpGet("https://pastebin.com/raw/XT0acuvS"))()
+        wait(0.1)
+    end
+end)
+
+Section:NewButton("Instant respawn script", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/dPy1V09r"))()
+end)
+
+
+Section:NewButton("Removes doors", "If u read this ur retard", function()
+        game.workspace.Doors:Destroy()
+    end)
+
+Section:NewButton("Toggle car sirens", "Toggles police car sirens", function()
+    local args = {
+        [1] = workspace.CarContainer.Squad.Body.sirens
+    }
+    
+    workspace.Remote.toggleSiren:FireServer(unpack(args))
+end)
+
+
+Section:NewButton("Open gate", "Opens gate", function()
+    
+local args = {
+    [1] = workspace.Prison_ITEMS.buttons:FindFirstChild("Prison Gate"):FindFirstChild("Prison Gate")
+}
+
+workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+
+end)
+
+Section:NewKeybind("Toggle ui", "Toggles the Ui", Enum.KeyCode.V, function()
+	Library:ToggleUI(V)
+end)
+
+--Credits
+
+local Tab = Window:NewTab("Credits")
+
+local Section = Tab:NewSection("Made by abcdefgg#4340")
